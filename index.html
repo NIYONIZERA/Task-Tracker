@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1>Task Tracker </h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Task</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="Task-form">
+            <h2>Add Task </h2>
+            <form id="taskForm">
+               
+                <input type="text" id="New Task" placeholder="newTask" required >
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="date" id="date" required max="" />
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section id="Task-list">
+            <h2>Task List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>New Task</th>
+                        <th>Description</th>
+                        
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="TaskTableBody"></tbody>
+            </table>
+        </section>
+
+        <section id="filters">
+            <h2>Filter Task</h2>
+            <h2>Status</h2>
+            
+            <button id=">ALL">ALL</button>
+            <button id="Complete">Complete</button>
+            <button id="Incomplete">Incomplete</button>
+            <button id="Clear Task">Clear</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Task Tracker | Built by Benigne</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
